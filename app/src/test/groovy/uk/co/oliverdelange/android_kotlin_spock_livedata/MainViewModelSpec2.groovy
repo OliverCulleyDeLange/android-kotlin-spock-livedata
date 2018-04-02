@@ -9,7 +9,7 @@ import spock.lang.Specification
 import spock.lang.Unroll
 
 @RunWith(SpotlinTestRunner)
-class MainViewModelSpec extends Specification {
+class MainViewModelSpec2 extends Specification {
 
     @Rule
     InstantTaskExecutorRule rule = new InstantTaskExecutorRule()
@@ -22,7 +22,7 @@ class MainViewModelSpec extends Specification {
     }
 
     @Unroll
-    def "Set error message to [#error] if name is [#name]"() {
+    def "Duplicate test to show bug"() {
         given: "No name entered"
         mainViewModel.name.value = name
 
